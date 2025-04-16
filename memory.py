@@ -44,7 +44,7 @@ graph_builder.add_conditional_edges(
 graph_builder.add_edge("tools", "chatbot")
 graph_builder.add_edge(START, "chatbot")
 graph = graph_builder.compile(checkpointer=memory)
-
+#Chave da conversa
 config = {"configurable": {"thread_id": "1"}}
 while True:
     input_message = input("User: ")
